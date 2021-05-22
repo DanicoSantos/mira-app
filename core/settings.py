@@ -120,7 +120,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATIC_ROOT = 'var/static_root/'
+STATICFILES_DIRS = ['static']
 
 # celery
 CELERY_BROKER_URL = 'amqp://localhost:5672'
