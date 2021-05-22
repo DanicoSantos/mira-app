@@ -4,5 +4,5 @@ from . import views
 app_name = 'client'
 
 urlpatterns = [
-    path('test/', views.test_vue, name="test")
+    path('', views.test_vue, name="test")
 ]
